@@ -1,6 +1,6 @@
 .nav-bar {
   background: #000000;
-  width: 6rem;
+  width: 6.5rem;
   height: 100vh;
   min-height: 50vh;
   position: absolute;
@@ -14,7 +14,7 @@
     img {
       display: block;
       margin: 10px auto;
-      width: 4rem;
+      width: 5.5rem;
       height: auto;
     }
   }
@@ -38,11 +38,15 @@
       position: relative;
       text-decoration: none;
 
+      svg {
+        color: #F0F0F0;
+      }
+
       i {
         transition: all 0.3 ease-out;
       }
       &:hover {
-        color: #1ed760;
+        color: #534bff;
         svg {
           opacity: 0;
         }
@@ -80,7 +84,7 @@
     }
     a.active {
       svg {
-        color: #1ed760;
+        color: #534bff;
       }
     }
   }

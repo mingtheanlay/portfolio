@@ -1,7 +1,7 @@
 import './index.scss'
 import NavBar from '../Sidebar/index'
 
-/*
+/* 
  * Layout component
  */
 
