@@ -1,6 +1,6 @@
 .nav-bar {
   background: #000000;
-  width: 6.5rem;
+  width: 6rem;
   height: 100vh;
   min-height: 50vh;
   position: absolute;
@@ -9,13 +9,20 @@
 
   .logo {
     display: block;
-    padding: 2rem 0;
+    padding: 1rem 0;
 
-    img {
-      display: block;
-      margin: 10px auto;
-      width: 5.5rem;
-      height: auto;
+    p {
+      text-align: center;
+      position: absolute;
+      text-align: center;
+      width: 100%;
+      font-size: 3rem;
+      color: #f0f0f0;
+      font-family: "Coolvetica", sans-serif;
+      &:hover {
+        color: #534bff;
+        transition: all 1 ease-out;
+      }
     }
   }
   nav {
@@ -29,17 +36,17 @@
     width: 100%;
 
     a {
-      font-size: 2.5rem;
+      font-size: 2.4rem;
       line-height: 51px;
       display: block;
       height: 51px;
       flex: 1 1;
-      margin: 2rem 0;
+      margin: 1.5rem 0;
       position: relative;
       text-decoration: none;
 
       svg {
-        color: #F0F0F0;
+        color: #f0f0f0;
       }
 
       i {
@@ -55,7 +62,7 @@
         }
       }
       &:after {
-        content: '';
+        content: "";
         font-size: 9px;
         letter-spacing: 2px;
         position: absolute;
@@ -69,22 +76,46 @@
     }
     a.home-link {
       &:after {
-        content: 'home';
+        content: "HOME";
       }
     }
     a.about-link {
       &:after {
-        content: 'about';
+        content: "ABOUT";
       }
     }
     a.contact-link {
       &:after {
-        content: 'contact';
+        content: "CONTACT";
       }
     }
     a.active {
       svg {
         color: #534bff;
+      }
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    position: absolute;
+    width: 100%;
+    display: block;
+    padding: 0;
+    margin: 0;
+    top: 79%;
+    text-align: center;
+
+    li {
+      a {
+        padding: 1.5rem 0;
+        display: block;
+        font-size: 2.5rem;
+        line-height: 16px;
+
+        &:hover svg {
+          color: #534bff;
+        }
       }
     }
   }
